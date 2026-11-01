@@ -3,25 +3,25 @@
 
 import math
 
-k1 = float(input("a: "))
-k2 = float(input("b: "))
-k3 = float(input("c: "))
+kenar1 = float(input("a: "))
+kenar2 = float(input("b: "))
+kenar3 = float(input("c: "))
 
-if k1 <= 0 or k2 <= 0 or k3 <= 0 or (k1 + k2 <= k3) or (k1 + k3 <= k2) or (k2 + k3 <= k1):
+if kenar1 <= 0 or kenar2 <= 0 or kenar3 <= 0 or (kenar1 + kenar2 <= kenar3) or (kenar1 + kenar3 <= kenar2) or (kenar2 + kenar3 <= kenar1):
     print("Geçersiz üçgen: Kenarlar pozitif olmalı ve üçgen eşitsizliğini sağlamalıdır.")
 else:
-    if k1 >= k2 and k1 >= k3:
-        a = k1
-        b = k2
-        c = k3
-    elif k2 >= k1 and k2 >= k3:
-        a = k2
-        b = k1
-        c = k3
+    if kenar1 >= kenar2 and kenar1 >= kenar3:
+        a = kenar1
+        b = kenar2
+        c = kenar3
+    elif kenar2 >= kenar1 and kenar2 >= kenar3:
+        a = kenar2
+        b = kenar1
+        c = kenar3
     else:
-        a = k3
-        b = k1
-        c = k2
+        a = kenar3
+        b = kenar1
+        c = kenar2
 
     if a == b and b == c:
         kenar_turu = "Eşkenar"
